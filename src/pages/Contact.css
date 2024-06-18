@@ -70,6 +70,13 @@
   font-size: 1rem;
   font-family: "Judson", sans-serif;
 }
+.exitMsg{
+  margin: 0.6rem auto;
+  display: block;
+  color: rgb(254, 0, 0);
+  font-size: 1rem;
+  font-family: "Judson", sans-serif;
+}
 .submit-btn {
   width: 80%;
   padding: 1rem;

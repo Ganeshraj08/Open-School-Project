@@ -12,19 +12,19 @@ import club_icon_9 from "../assets/images/Icon Container-9.png";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import sps2 from "../assets/images/DSC_3528.jpeg";
+import sps2 from "../assets/images/DSC_3528-min.jpeg";
 import ImageWithPlaceholder from "../components/ImageWithPlaceholder";
 
-import img_1 from "../assets/images/DSC_5195.jpeg";
-import img_2 from "../assets/images/DSC_5621.jpeg";
-import img_3 from "../assets/images/DSC_5591.jpeg";
+import img_1 from "../assets/images/DSC_5195-min.jpeg";
+import img_2 from "../assets/images/DSC_5621-min.jpeg";
+import img_3 from "../assets/images/DSC_5591-min.jpeg";
 import img_4 from "../assets/images/DSC_3380.jpeg";
-import img_5 from "../assets/images/182A0720.jpeg";
+import img_5 from "../assets/images/182A0720-min.jpeg";
 import img_6 from "../assets/images/GC.jpeg";
 import photo1 from "../assets/images/photo1.jpeg";
-import photo7 from "../assets/images/DSC_5613.jpeg";
-import celebration from "../assets/images/DSC_5504.jpeg";
-import sps from "../assets/images/SpS.jpeg";
+import photo7 from "../assets/images/DSC_5613-min.jpeg";
+import celebration from "../assets/images/DSC_5504-min.jpeg";
+import sps from "../assets/images/SpS-min.jpeg";
 
 import placeholder from "../assets/images/placeholder-image.png";
 import ScrollAnimation from "../components/ScrollAnimation";
@@ -210,10 +210,9 @@ const Studentlife = () => {
         </ScrollAnimation>
       </div>
 
-      
-        <div className="celebration">
-          {celebrationData.map((item, index) => (
-            <ScrollAnimation direction="leftToRight" index={index} key={index}>
+      <div className="celebration">
+        {celebrationData.map((item, index) => (
+          <ScrollAnimation direction="leftToRight" index={index} key={index}>
             <div
               key={index}
               className="celebration-card 
@@ -228,12 +227,11 @@ const Studentlife = () => {
               <h4>{item.title}</h4>
               <p>{item.description}</p>
             </div>
-            </ScrollAnimation>
-          ))}
-        </div>
-      
+          </ScrollAnimation>
+        ))}
+      </div>
 
-      <ScrollAnimation direction="bottomToTop" >
+      <ScrollAnimation direction="bottomToTop">
         <div className="text-1 text-2">
           <h2>Our Achievements</h2>
           <h3>Student Support</h3>
@@ -245,7 +243,7 @@ const Studentlife = () => {
         </div>
       </ScrollAnimation>
 
-      <ScrollAnimation direction="bottomToTop" >
+      <ScrollAnimation direction="bottomToTop">
         <div className="about-image-div">
           <ImageWithPlaceholder
             src={sps}
@@ -285,7 +283,7 @@ const Studentlife = () => {
         </Carousel>
       </div>
 
-      <ScrollAnimation direction="rightToLeft" >
+      <ScrollAnimation direction="rightToLeft">
         <div className="about-image-div">
           <ImageWithPlaceholder
             src={sps2}

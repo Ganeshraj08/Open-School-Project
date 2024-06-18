@@ -3,10 +3,10 @@ import "./Services.css";
 import { faqData } from "../data";
 import FAQ from "../components/FAQ";
 import ScrollAnimation from "../components/ScrollAnimation"; // Import the ScrollAnimation component here
-import AP from "../assets/images/DSC_5601.jpeg";
-import EA from "../assets/images/DSC_3706.jpeg";
-import SSS from "../assets/images/DSC_3483.jpeg";
-import CE from "../assets/images/DSC_3458.jpeg";
+import AP from "../assets/images/DSC_5601-min.jpeg";
+import EA from "../assets/images/DSC_3706-min.jpeg";
+import SSS from "../assets/images/DSC_3483-min.jpeg";
+import CE from "../assets/images/DSC_3458-min.jpeg";
 import p1 from "../assets/images/student1.jpeg";
 import p2 from "../assets/images/photo14.jpeg";
 import placeholder from "../assets/images/placeholder-image.png";

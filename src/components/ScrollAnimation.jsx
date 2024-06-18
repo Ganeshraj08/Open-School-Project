@@ -41,7 +41,7 @@ const ScrollAnimation = ({
       animate={controls}
       initial="hidden"
       variants={directionVariants[direction]}
-      transition={{ duration: 0.8, delay: index * 0.5 }} // Adjust delay as needed
+      transition={{ duration: 0.6, delay: index * 0.3 }} // Adjust delay as needed
     >
       {children}
     </motion.div>

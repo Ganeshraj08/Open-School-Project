@@ -3,9 +3,9 @@ import "./Features.css";
 import Learn_1 from "../assets/images/DSC_4945.jpeg";
 import Learn_2 from "../assets/images/board2.jpeg";
 import Learn_3 from "../assets/images/workshop.jpeg";
-import Learn_4 from "../assets/images/DSC_5195.jpeg";
-import Learn_5 from "../assets/images/DSC_5601.jpeg";
-import Learn_6 from "../assets/images/DSC_5086.jpeg";
+import Learn_4 from "../assets/images/DSC_5195-min.jpeg";
+import Learn_5 from "../assets/images/DSC_5601-min.jpeg";
+import Learn_6 from "../assets/images/DSC_5086-min.jpeg";
 
 import placeholder from "../assets/images/placeholder-image.png";
 import ImageWithPlaceholder from "./ImageWithPlaceholder";
