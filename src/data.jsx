@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const serviceData = [
   {
     title: "EDUCATION IMPORTANT",
@@ -15,34 +17,34 @@ export const footerLinks = [
   {
     title: "Home",
     links: [
-      { name: "Features", link: "/" },
-      { name: "Our Testimonials", link: "/" },
-      { name: "FAQ", link: "/" },
+      { name: "Features", link: "/academics" },
+      { name: "Our Testimonials", link: "/services" },
+      { name: "FAQ", link: "/services" },
     ],
   },
   {
     title: "About us",
     links: [
-      { name: "Our Mission", link: "/" },
-      { name: "Our Vision", link: "/" },
-      { name: "Awards", link: "/" },
-      { name: "History", link: "/" },
-      { name: "Teachers", link: "/" },
+      { name: "Our Mission", link: "/about" },
+      { name: "Our Vision", link: "/about" },
+      { name: "Awards", link: "/gallery" },
+      { name: "History", link: "/about" },
+      { name: "Teachers", link: "/academics" },
     ],
   },
   ,
   {
     title: "Academics",
     links: [
-      { name: "Special Features", link: "/" },
-      { name: "Gallery", link: "/" },
+      { name: "Special Features", link: "/academics" },
+      { name: "Gallery", link: "/gallery" },
     ],
   },
   {
     title: "Contact us",
     links: [
-      { name: "Information", link: "/" },
-      { name: "Map direction", link: "/" },
+      { name: "Information", link: "/contact" },
+      { name: "Map direction", link: "/contact" },
     ],
   },
 ];
@@ -128,5 +130,4 @@ export const FacultyData = [
     price: "Teacher",
     description: "Some text about the product..",
   },
-  
 ];

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Footer.css";
 import { footerLinks } from "../data";
 import FootLink from "./FootLink";
@@ -7,10 +7,10 @@ import mail from "../assets/images/mail.png";
 import mobile from "../assets/images/Icon.png";
 import insta from "../assets/images/insta-icon.png";
 import linkedin from "../assets/images/linkedin.png";
-import youtube from "../assets/images/youtube.png"
-
+import youtube from "../assets/images/youtube.png";
 
 const Footer = () => {
+  const [year, setYear] = useState(new Date().getFullYear());
   return (
     <footer className="footer-section">
       <div className="footer1">
@@ -62,7 +62,7 @@ const Footer = () => {
       </div>
       <hr className="hr" />
       <div className="copywrite">
-        Copyright 2024 | Open School Learners Academy | All Rights Reserved
+        Copyright {year} | Open School Learners Academy | All Rights Reserved
       </div>
     </footer>
   );
