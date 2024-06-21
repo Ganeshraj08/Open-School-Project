@@ -56,12 +56,19 @@ const Contact = () => {
               required
               placeholder="Enter your Email"
             />
-            <label htmlFor="">Enter your message</label>
+            <label>Enter your Mobile no. :</label>
+            <input
+              type="tel"
+              name="mobileNo."
+              required
+              placeholder="Enter your mobile no"
+            />
+            <label htmlFor="">Enter your enquiry message : </label>
             <textarea
-              name="message"
+              name="enquiry"
               cols="30"
               rows="10"
-              placeholder="Message"
+              placeholder="Enquiry.."
             ></textarea>
             <button className="submit-btn" type="submit">
               SUBMIT
@@ -70,7 +77,6 @@ const Contact = () => {
           <span className="send">{result}</span>
         </div>
 
-        
         <button className="location" onClick={handleLocationClick}>
           Location
         </button>
