@@ -1,9 +1,9 @@
 import React from "react";
 import "./Academics.css";
 import profile_1 from "../assets/images/faculty1.jpeg";
-import profile_2 from "../assets/images/img-2.png";
-import profile_3 from "../assets/images/img-3.png";
-import profile_4 from "../assets/images/img-4.png";
+import profile_2 from "../assets/images/aaa.jpeg";
+import profile_3 from "../assets/images/pp-placeholder.png";
+import profile_4 from "../assets/images/pp-placeholder.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import photo12 from "../assets/images/182A0902-min.jpeg";
@@ -17,8 +17,8 @@ import { FacultyData } from "../data";
 const photos = [
   profile_1,
   profile_2,
-  profile_3,
-  profile_4,
+  profile_3,profile_4,
+  
  
 ];
 
@@ -64,7 +64,7 @@ function Product(props) {
 
 const Academics = () => {
   const product = FacultyData.map((item, index) => (
-    <Product
+    <Product className='pro-img'
       name={item.name}
       url={photos[index]}
       price={item.price}

@@ -25,18 +25,18 @@ export const footerLinks = [
   {
     title: "About us",
     links: [
-      { name: "Our Mission", link: "/about" },
-      { name: "Our Vision", link: "/about" },
-      { name: "Awards", link: "/gallery" },
-      { name: "History", link: "/about" },
-      { name: "Teachers", link: "/academics" },
+      { name: "Our Mission", link: "/" },
+      { name: "Our Vision", link: "/" },
+      { name: "Awards", link: "/" },
+      { name: "History", link: "/" },
+      { name: "Teachers", link: "/" },
     ],
   },
   ,
   {
     title: "Academics",
     links: [
-      { name: "Special Features", link: "/academics" },
+      { name: "Special Features", link: "/" },
       { name: "Gallery", link: "/gallery" },
     ],
   },
@@ -105,29 +105,29 @@ export const FacultyData = [
   {
     id: 1,
 
-    name: "DR. JOE VASANTH B",
+    name: "Dr. Joe Vasanth B",
     price: "Mathematics",
     description: "",
   },
   {
     id: 2,
 
-    name: "Mary",
-    price: "Teacher",
-    description: "Some text about the product..",
+    name: "Ms. Sangeetha  N",
+    price: "Humanics & Science",
+    description: "",
   },
   {
     id: 3,
 
     name: "Amy",
     price: "Teacher",
-    description: "Some text about the product..",
+    description: "",
   },
   {
     id: 4,
 
     name: "Scarlett",
     price: "Teacher",
-    description: "Some text about the product..",
+    description: "",
   },
 ];
