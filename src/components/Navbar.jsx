@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/images/photo3.jpeg";
+import logo from "../assets/images/Ahum logo 1.png";
 import mobile_menu from "../assets/images/menu-icon.png";
 import close_icon from "../assets/images/close-icon.jpeg";
 import React, { useState, useRef, useEffect } from "react";

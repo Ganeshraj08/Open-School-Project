@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Footer.css";
 import { footerLinks } from "../data";
 import FootLink from "./FootLink";
-import logo from "../assets/images/photo3.jpeg";
+import logo from "../assets/images/Ahum logo 1.png";
 import mail from "../assets/images/mail.png";
 import mobile from "../assets/images/Icon.png";
 import insta from "../assets/images/insta-icon.png";
