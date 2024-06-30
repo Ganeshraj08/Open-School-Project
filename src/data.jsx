@@ -119,8 +119,8 @@ export const FacultyData = [
   {
     id: 3,
 
-    name: "Amy",
-    price: "Teacher",
+    name: "------",
+    price: "French",
     description: "",
   },
   {

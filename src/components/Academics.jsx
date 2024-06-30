@@ -2,7 +2,7 @@ import React from "react";
 import "./Academics.css";
 import profile_1 from "../assets/images/faculty1.jpeg";
 import profile_2 from "../assets/images/aaa.jpeg";
-import profile_3 from "../assets/images/pp-placeholder.png";
+import profile_3 from "../assets/images/faculty3.jpeg";
 import profile_4 from "../assets/images/pp-placeholder.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
