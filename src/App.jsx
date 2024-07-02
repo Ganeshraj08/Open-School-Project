@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  
+} from "react-router-dom";
 import About from "./pages/About";
 import Admission from "./pages/Admission";
 import Services from "./pages/Services";
 import AcademicsCom from "./pages/AcademicsCom";
+import LoginPage from "./pages/LoginPage";
 
 import ImageGallery from "./pages/ImageGallery";
 import Contact from "./pages/Contact";
@@ -22,8 +28,9 @@ function App() {
         <Route path="services" element={<Services />} />
         <Route path="academics" element={<AcademicsCom />} />
         <Route path="contact" element={<Contact />} />
-       
+
         <Route path="gallery" element={<ImageGallery />} />
+        <Route path="login" element={<LoginPage />} />
       </Routes>
       <Footer />
     </Router>

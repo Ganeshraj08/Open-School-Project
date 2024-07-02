@@ -1,0 +1,142 @@
+.login-page {
+  margin: 1rem auto 5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 500px;
+  margin: 0 auto;
+
+  padding: 2em;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group1 {
+  margin-bottom: 1em;
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group1 label {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.form-group1 input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  resize: none;
+  outline: none;
+}
+.form-group1 input:focus {
+  border: 2px solid #49b3ff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group1 input::placeholder {
+  color: #ccc;
+}
+
+/* check box code */
+/* Hide the default checkbox */
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+/* Create a custom checkbox */
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1rem;
+  color: gray;
+  margin-top: 10px;
+}
+
+/* Style the checkmark */
+.custom-checkbox .checkmark {
+  width: 20px;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-right: 10px;
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+/* Style the checkmark when checked */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: black;
+}
+
+/* Create the tick mark using a pseudo-element */
+.custom-checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Show the tick mark when checked */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  display: block;
+}
+
+/* check box code end */
+.error-message {
+  color: red;
+  margin-bottom: 1em;
+}
+
+.login-button {
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  width: 70%;
+  margin: 0px auto;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    max-width: 400px;
+  }
+  .login-page {
+    padding: 0 2rem;
+  }
+}
