@@ -106,20 +106,20 @@ export const FacultyData = [
     id: 1,
 
     name: "Dr. Joe Vasanth B",
-    price: "Mathematics",
+    price: "Science & Humanities",
     description: "",
   },
   {
     id: 2,
 
     name: "Ms. Sangeetha  N",
-    price: "Humanics & Science",
+    price: "Mathematics",
     description: "",
   },
   {
     id: 3,
 
-    name: "------",
+    name: "Ms. Blossom",
     price: "French",
     description: "",
   },
