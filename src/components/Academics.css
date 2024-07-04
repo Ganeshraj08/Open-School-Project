@@ -3,8 +3,7 @@
 .academics {
   padding: 0 2rem;
   margin: 1rem auto;
-  font-family: 'Times New Roman', Times, serif;
-
+  font-family: "Times New Roman", Times, serif;
 }
 .academics a {
   text-align: center;
@@ -21,7 +20,7 @@
 .academics h3 {
   color: rgba(73, 179, 255, 1);
   font-size: 1.7rem;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 
   text-align: center;
 }
@@ -31,19 +30,18 @@
   margin: 1rem auto;
   font-size: 1.3rem;
   line-height: 1.4;
- 
 }
 .profile {
   max-width: 1280px;
   margin: 3rem auto;
- 
+
   text-align: center;
 }
 .profile > h2 {
   color: rgba(73, 179, 255, 1);
   font-size: 1.7rem;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .product--image {
@@ -61,41 +59,37 @@
   padding: 2rem 0 0 0;
   text-align: center;
   border-radius: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 .profile-details {
-  margin: 0.5rem auto 0 auto ;
+  margin: 0.5rem auto 0 auto;
   display: flex;
   gap: 0.6rem;
   flex-direction: column;
-  background-color:#64beff;
+  background-color: #64beff;
   padding: 1.5rem;
   border-radius: 0px 0px 20px 20px;
 }
 
-.price{
+.price {
   color: darkblue;
   font-size: 1.2rem;
 }
 
-.profile-name{
-  color:black;
-  font-family: 'Times New Roman', Times, serif;
-  
-
+.profile-name {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.react-multi-carousel-list{
- 
-  margin: 1rem auto 1rem auto ;
+.react-multi-carousel-list {
+  margin: 1rem auto 1rem auto;
+  justify-content: center;
 }
 
-.react-multi-carousel-track{
+.react-multi-carousel-track {
   justify-content: center;
   align-items: center;
 }
-
-
 
 @media (max-width: 820px) {
   .academics p {
@@ -111,8 +105,8 @@
     text-align: center;
   }
 }
-@media (max-width:425px){
-  .faculty-card{
-    margin: 0 ;
+@media (max-width: 425px) {
+  .faculty-card {
+    margin: 0;
   }
 }

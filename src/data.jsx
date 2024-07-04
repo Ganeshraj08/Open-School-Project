@@ -123,11 +123,5 @@ export const FacultyData = [
     price: "French",
     description: "",
   },
-  {
-    id: 4,
-
-    name: "-------",
-    price: "------",
-    description: "",
-  },
+ 
 ];

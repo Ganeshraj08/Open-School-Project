@@ -11,6 +11,10 @@
   padding-left: 44px;
   gap: 30px;
 }
+.admin{
+  text-align: center;
+  color: black;
+}
 
 .logo{
   width: 80px;

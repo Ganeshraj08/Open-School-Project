@@ -1,22 +1,18 @@
-import React from 'react'
-import './Footer.css'
+import React from "react";
+import "./Footer.css";
 
-const FootLink = ({title,links}) => {
+const FootLink = ({ title, links }) => {
   return (
-    <div className='cell'>
-        <h2>
-            {title}
-        </h2>
-        <br></br>
-        {
-            links.map((itr)=>(
-            <a className='cellLink' href={itr.link}>{itr.name}
-            </a>
-            )
-            )
-        }
+    <div className="cell">
+      <h2>{title}</h2>
+      <br></br>
+      {links.map((itr, index) => (
+        <a key={index} className="cellLink" href={itr.link}>
+          {itr.name}
+        </a>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default FootLink
+export default FootLink;

@@ -6,7 +6,7 @@ import React, { useState, useRef, useEffect } from "react";
 import "../pages/Form.css"; //
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ isLoggedIn }) => {
   const initialFormData = {
     firstName: "",
     lastName: "",
@@ -25,7 +25,7 @@ const Navbar = () => {
   const formRef = useRef(null);
 
   const handleChange = (e) => {
-    if (success){
+    if (success) {
       setResult("");
     }
     setExitMsg(false);
@@ -37,14 +37,14 @@ const Navbar = () => {
   };
 
   const [result, setResult] = useState("");
-  const [success,setSuccess] = useState(true);
+  const [success, setSuccess] = useState(true);
 
   const onSubmit = async (event) => {
     event.preventDefault();
     setSuccess(true);
     setResult(`Sending...`);
     setExitMsg(false);
-    
+
     const formData = new FormData(event.target);
 
     formData.append("access_key", "195c9d97-fa76-4dfa-83c6-10fcf7707d39");
@@ -60,15 +60,13 @@ const Navbar = () => {
       setResult("Form Submitted Successfully, thank you!.");
       setFormData(initialFormData);
       setSuccess(true);
-      
-     
     } else {
       console.log("Error", data);
       setResult(data.message);
       setSuccess(false);
     }
-     setExitMsg(true);
-     setCountdown(10);
+    setExitMsg(true);
+    setCountdown(10);
 
     // Start the countdown
   };
@@ -78,7 +76,6 @@ const Navbar = () => {
       if (countdown === 0) {
         setShowForm(false);
         setExitMsg(false);
-        
       } else {
         const timer = setInterval(() => {
           setCountdown((prevCountdown) => prevCountdown - 1);
@@ -92,10 +89,9 @@ const Navbar = () => {
   const toggleForm = () => {
     setShowForm(!showForm);
 
-    if(success){
+    if (success) {
       setResult("");
     }
-    
   };
 
   const handleClickOutside = (e) => {
@@ -115,9 +111,13 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="navbar-logo">
-          <Link to="/">
-            <img src={logo} className="logo" alt="Logo" />
-          </Link>
+          <div>
+            <Link to="/">
+              <img src={logo} className="logo" alt="Logo" />
+            </Link>
+            {isLoggedIn && <div className="admin">Admin</div>}
+          </div>
+
           {mobileMenu ? (
             <img
               src={close_icon}
@@ -256,7 +256,7 @@ const Navbar = () => {
               </div>
               <button type="submit">Submit</button>
             </form>
-            <span className={!success?"exitMsg":"send"}>{result}</span>
+            <span className={!success ? "exitMsg" : "send"}>{result}</span>
             <span className="exitMsg">
               {exitMsg ? ` Exiting in ${countdown}.` : ""}
             </span>
