@@ -43,6 +43,7 @@ export const responsive = {
   },
 };
 
+
 function Product(props) {
   return (
     <div className="faculty-card">
@@ -88,7 +89,7 @@ const Academics = () => {
 
         <div className="profile">
           <h2>FACULTY PROFILE</h2>
-          <Carousel showDots={true} responsive={responsive}>
+          <Carousel className="hhh" showDots={true} responsive={responsive}>
             {product}
           </Carousel>
         </div>

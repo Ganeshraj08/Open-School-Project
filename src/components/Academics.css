@@ -5,6 +5,11 @@
   margin: 1rem auto;
   font-family: "Times New Roman", Times, serif;
 }
+
+.hhh{
+  display: flex;
+  justify-content: center;
+}
 .academics a {
   text-align: center;
   color: #000000;
@@ -83,7 +88,6 @@
 
 .react-multi-carousel-list {
   margin: 1rem auto 1rem auto;
-  justify-content: center;
 }
 
 .react-multi-carousel-track {

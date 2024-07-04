@@ -17,7 +17,6 @@ const ImageGallery = ({ isLoggedIn }) => {
   const [extracurricular, setExtracurricular] = useState(false);
   const [programs, setPrograms] = useState(false);
   const [workshops, setWorkshops] = useState(false);
-  const [videos, setVideos] = useState(false);
 
   const [loadedImages, setLoadedImages] = useState({
     academics: [],
@@ -107,7 +106,7 @@ const ImageGallery = ({ isLoggedIn }) => {
             </div>
           ) : (
             !academics && (
-              <Carousel className="hhh" showDots={true} responsive={responsive}>
+              <Carousel showDots={true} responsive={responsive}>
                 {loadedImages.academics.slice(0, 10).map((image, index) => (
                   <div key={index} className="about-image-div-gallery">
                     <ImageWithPlaceholder
@@ -117,7 +116,7 @@ const ImageGallery = ({ isLoggedIn }) => {
                     />
                   </div>
                 ))}
-                {loadedImages.academics.length > 20 && (
+                {loadedImages.workshops.length > 15 && (
                   <div className="view-more-section">
                     {loadedImages.academics
                       .slice(10, 13)
@@ -174,7 +173,7 @@ const ImageGallery = ({ isLoggedIn }) => {
                       />
                     </div>
                   ))}
-                {loadedImages.extracurricular.length > 20 && (
+                {loadedImages.extracurricular.length > 15 && (
                   <div className="view-more-section">
                     {loadedImages.extracurricular
                       .slice(10, 13)
@@ -231,7 +230,7 @@ const ImageGallery = ({ isLoggedIn }) => {
                     />
                   </div>
                 ))}
-                {loadedImages.programs.length > 20 && (
+                {loadedImages.programs.length > 15 && (
                   <div className="view-more-section">
                     {loadedImages.programs.slice(10, 13).map((image, index) => (
                       <ImageWithPlaceholder
@@ -284,7 +283,7 @@ const ImageGallery = ({ isLoggedIn }) => {
                     />
                   </div>
                 ))}
-                {loadedImages.workshops.length > 20 && (
+                {loadedImages.workshops.length > 15 && (
                   <div className="view-more-section">
                     {loadedImages.workshops
                       .slice(10, 13)
