@@ -116,7 +116,7 @@ const ImageGallery = ({ isLoggedIn }) => {
                     />
                   </div>
                 ))}
-                {loadedImages.workshops.length > 15 && (
+                {loadedImages.academics.length > 15 && (
                   <div className="view-more-section">
                     {loadedImages.academics
                       .slice(10, 13)
