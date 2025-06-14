@@ -154,6 +154,12 @@ const Navbar = ({ isLoggedIn }) => {
           <li>
             <Link to="/gallery">GALLERY</Link>
           </li>
+          <li>
+            <Link to="/video">VIDEO</Link>
+          </li>
+          <li>
+            <Link to="/update">UPDATE</Link>  
+          </li>
 
           <li>
             <Link to="/contact">CONTACT US</Link>

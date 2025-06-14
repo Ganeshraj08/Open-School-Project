@@ -1,0 +1,29 @@
+.vid-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  height: 100vh;
+  margin-top: -80px;
+}
+.vid-cont video{
+    border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+  .vid-cont {
+    height: auto;
+    margin-top: 0;
+    padding: 10px;
+  }
+
+  .vid-cont video {
+    width: 100%;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vid-cont video {
+    border-radius: 15px;
+  }
+}

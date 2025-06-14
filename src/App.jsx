@@ -11,6 +11,8 @@ import LoginPage from "./pages/LoginPage";
 import EditPage from "./pages/EditPage";
 import ImageGallery from "./pages/ImageGallery";
 import Contact from "./pages/Contact";
+import Video from "./pages/Video/Video";
+import Update from "./pages/Update/Update";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -26,6 +28,8 @@ function App() {
         <Route path="services" element={<Services />} />
         <Route path="academics" element={<AcademicsCom />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="video" element={<Video />} />
+        <Route path="update" element={<Update />} />
 
         <Route path="gallery" element={<ImageGallery  isLoggedIn={isLoggedIn}/>} />
         <Route path="login" element={<LoginPage setIsLoggedIn={setIsLoggedIn} />} />
